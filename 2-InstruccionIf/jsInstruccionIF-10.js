@@ -1,6 +1,28 @@
+/*
+Autor: Abregú Mariela.
+Enunciado IF 10.
+*/
+
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");
+	let nota;
+    let maximo=10;
+	let minimo=1;
 
-}//FIN DE LA FUNCIÓN
+	nota=Math.round(Math.random()*(maximo-minimo)+minimo);
+	
+    if(nota>=9){
+        alert("EXELENTE");
+	} 
+	else{
+		if(nota>4)
+		alert("APROBO");
+		else{
+			if(nota<4)
+			alert("VAMOS, la proxima se puede");
+		}
+	}
+	
+	//alert(numeroRandom);	
+
+}
